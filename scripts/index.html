@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Avenue Code staff Web App</title>
+        <link rel="stylesheet" href="../css/screen.css" />
+        <link rel="stylesheet" href="../bower_components/foundation/css/foundation.min.css" />
+        <script data-main="scripts/main" src="require.js"></script>
+
+    </head>
+    <body>
+        
+        <script id="contactTemplate" type="text/template">
+            <div class="large-3 small-6 columns">
+                <img src="http://placehold.it/1000x1000&text=Thumbnail">
+
+                <div class="panel">
+                    <h5><%= name %></h5>
+                    <h6 class="subheader">
+                        <dl>
+                            <dt>Tel:</dt><dd><%= tel %></dd>
+                            <dt>Email:</dt><dd><a href="mailto:<%= email %>"><%= email %></a></dd>
+                        </dl>
+                    </h6>
+                </div>
+            </div>
+        </script>
+
+        <script id="headerTemplate" type="text/template">
+            <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+              <!-- Title Area -->
+              <li class="name">
+                <h1>
+                  <a href="#">
+                    Top Bar Title
+                  </a>
+                </h1>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li class="divider"></li>
+                <li class="has-dropdown">
+                  <a href="#">Main Item 1</a>
+                  <ul class="dropdown">
+                    <li><label>Section Name</label></li>
+                    <li class="has-dropdown">
+                      <a href="#" class="">Has Dropdown, Level 1</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Dropdown Options</a></li>
+                        <li><a href="#">Dropdown Options</a></li>
+                        <li><a href="#">Level 2</a></li>
+                        <li><a href="#">Subdropdown Option</a></li>
+                        <li><a href="#">Subdropdown Option</a></li>
+                        <li><a href="#">Subdropdown Option</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Dropdown Option</a></li>
+                    <li><a href="#">Dropdown Option</a></li>
+                    <li class="divider"></li>
+                    <li><label>Section Name</label></li>
+                    <li><a href="#">Dropdown Option</a></li>
+                    <li><a href="#">Dropdown Option</a></li>
+                    <li><a href="#">Dropdown Option</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">See all →</a></li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">Main Item 2</a></li>
+                <li class="divider"></li>
+                <li class="has-dropdown">
+                  <a href="#">Main Item 3</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Dropdown Option</a></li>
+                    <li><a href="#">Dropdown Option</a></li>
+                    <li><a href="#">Dropdown Option</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">See all →</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            </nav>
+            <!-- End Top Bar -->
+
+        </script>
+
+
+        <!--<script id="mainTemplate" type="text/template">
+
+            <div class="large-4 small-12 columns">
+
+                <img src="http://placehold.it/500x500&text=Logo">
+
+                <div class="hide-for-small panel">
+                    <h3>Header</h3>
+                    <h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis.
+                    </h5>
+                </div>
+
+                <a href="#">
+                    <div class="panel callout radius">
+                        <h6>Buddy since 2012</h6>
+                    </div>
+                </a>
+            </div>
+
+        </script> -->
+
+
+        <div class="row">
+            <div class="large-12 columns">
+
+            <!-- Navigation -->
+
+              <div class="row">
+                <div class="large-12 columns">
+
+                    <header id="header"></header>
+                  
+                </div>
+              </div>
+
+            <!-- End Navigation -->
+
+              <div class="row">
+
+            <!-- Side Bar -->
+
+                <div id="mainArea">
+                  
+
+                </div>
+
+            <!-- End Side Bar -->
+
+            <!-- Thumbnails -->
+
+                <div id="contacts" class="large-12 columns">
+                  <div class="row">
+
+                  </div>
+
+            <!-- End Thumbnails -->
+
+
+            
+                </div>
+              </div>
+
+
+            <!-- Footer -->
+
+              <footer class="row">
+                <div class="large-12 columns"><hr />
+                  <div class="row">
+
+                    <div class="large-6 columns">
+                      <p>© Copyright no one at all. Go to town.</p>
+                    </div>
+
+                    <div class="large-6 columns">
+                      <ul class="inline-list right">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </footer>
+
+            <!-- End Footer -->
+
+            </div>
+        </div>
+    
+
+
+
+        <!-- ========= -->
+        <!-- Libraries -->
+        <!-- ========= -->
+        <script src="../bower_components/jquery/jquery.min.js"></script>
+        <script src="../bower_components/json2/json2.js"></script>
+        <script src="../bower_components/underscore/underscore-min.js"></script>
+        <script src="../bower_components/backbone/backbone-min.js"></script>
+        <script src="../bower_components/backbone.localStorage/backbone.localstorage-min.js"></script>
+        <script src="../bower_components/foundation/js/foundation.js"></script>
+        <script src="../bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "backbone_test",
+  "version": "0.0.0",
+  "homepage": "https://github.com/satumtech/backbone_test",
+  "authors": [
+    "eduardo305@gmail.com"
+  ],
+  "description": "Project used to test how to integrate bower, backbone, foundation and others",
+  "main": "app",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.0",
+    "jquery": "~2.0.3",
+    "underscore": "~1.5.2",
+    "backbone.localStorage": "~1.1.7",
+    "handlebars": "~1.1.2",
+    "foundation": "~5.0.2",
+    "json2": "*",
+    "requirejs-jquery": "~0.25.0",
+    "requirejs-text": "~2.0.10",
+    "requirejs": "~2.1.9"
+  }
+}

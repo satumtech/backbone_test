@@ -1,0 +1,21 @@
+{
+  "name": "backbone_test",
+  "version": "0.0.0",
+  "description": "Testing integration between bower, grunt, backbone, jquery, foundation and others",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/satumtech/backbone_test.git"
+  },
+  "author": "satumtecnologia@gmail.com",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/satumtech/backbone_test/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2"
+  }
+}
